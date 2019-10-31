@@ -1,0 +1,27 @@
+<h2>Bosses</h2>
+
+<ul class="bosses">
+  <li *ngFor="let boss of bosses">
+    <a routerLink="/detail/{{boss.id}}">
+      <span class="badge">{{boss.id}}</span> {{boss.name}}
+    </a> 
+    <button class="delete" title="delete boss" (click)="delete(boss)">x</button>
+ </li>
+</ul>
+
+
+<div class="add-box">
+  <label>Boss name:
+    <input #bossName />
+  </label>
+  <label>Boss  HP :
+    <input #bossHP />
+  </label>
+  <label>Boss Cost:
+    <input #bossCost />
+  </label>
+  <button (click)="add(bossName.value,bossHP.value,bossCost.value); bossName.value = ''; bossHP.value = ''; bossCost.value = ''">
+    add
+  </button>
+</div>
+ 

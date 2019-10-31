@@ -1,0 +1,10 @@
+<h3>Boss Stats</h3>
+<div class="grid grid-pad">
+  <a *ngFor="let boss of bosses" class="col-1-4" routerLink="/detail/{{boss.id}}">
+    <div class="module boss">
+       <h4>{{boss.name}}</h4>
+    </div>
+  </a>
+</div>
+
+<app-boss-search></app-boss-search>

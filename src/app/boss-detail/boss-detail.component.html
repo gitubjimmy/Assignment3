@@ -1,0 +1,25 @@
+<div *ngIf="boss" class="content">
+
+  <h2>{{boss.name | uppercase}} Details</h2>
+  <div>
+    <label>name:
+      <input [(ngModel)]="boss.name" placeholder="name"/>
+    </label>
+  </div>
+  <div>
+
+ <div>
+    <label>HP:
+      <input [(ngModel)]="boss.HP" placeholder="HP"/>
+    </label>
+  </div>
+
+  <div>
+    <label>Cost:
+      <input [(ngModel)]="boss.Cost" placeholder="Cost"/>
+    </label>
+  </div>
+  
+  <button (click)="save()">save</button>
+  <button (click)="goBack()">go back</button>
+</div>

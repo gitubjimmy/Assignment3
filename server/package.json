@@ -1,0 +1,25 @@
+{
+  "name": "waffleserver",
+  "version": "1.0.0",
+  "description": "Waffle 17.5th Rookies final Project",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Sang Chul Kim",
+  "license": "ISC",
+  "devDependencies": {
+    "typescript": "^3.7.3"
+  },
+  "dependencies": {
+    "@types/body-parser": "^1.17.1",
+    "@types/express": "^4.17.1",
+    "body-parser": "^1.19.0",
+    "cookie-parser": "^1.4.4",
+    "express": "^4.17.1",
+    "pg": "^7.14.0",
+    "postgresql": "0.0.1",
+    "reflect-metadata": "^0.1.13",
+    "typeorm": "^0.2.20"
+  }
+}
